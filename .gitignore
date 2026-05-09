@@ -1,5 +1,4 @@
 __pycache__
 *.pyc
 .env
-employee_directory.db
 make_admin.py
