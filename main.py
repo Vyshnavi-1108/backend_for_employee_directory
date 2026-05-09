@@ -12,11 +12,9 @@ import models.employee
 
 load_dotenv() 
 
-Base.metadata.create_all(bind=engine) 
-
-app = FastAPI(title="Employee Management API", version="1.0.0") 
-
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173") 
+Base.metadata.create_all(bind=engine) 
+app = FastAPI(title="Employee Management API", version="1.0.0") 
 
 app.add_middleware(
     CORSMiddleware,
